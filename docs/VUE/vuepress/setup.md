@@ -1,7 +1,7 @@
 ---
 lang: ko-KR
-title: sample
+title: vuepress 설정하기
 description: Description of this page
 ---
 
-js sample
+# vuepress 시작하기

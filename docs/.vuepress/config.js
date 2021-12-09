@@ -46,7 +46,6 @@ module.exports = {
             "/JS/",
             {
               text: "sample",
-              link: "/JS/fuctional/sample.md",
               children: ["/JS/fuctional/sample.md"],
             },
           ],
@@ -58,7 +57,6 @@ module.exports = {
             "/TS/",
             {
               text: "sample",
-              link: "/TS/fuctional/sample.md",
               children: ["/TS/fuctional/sample.md"],
             },
           ],
@@ -70,12 +68,10 @@ module.exports = {
             "/VUE/",
             {
               text: "vue-router",
-              link: "/VUE/vue-router/vue-router-is.md",
               children: ["/VUE/vue-router/vue-router-is.md", "/VUE/vue-router/vue-router-navigation.md"],
             },
             {
               text: "vuex",
-              link: "/VUE/vuex/vuex-is.md",
               children: ["/VUE/vuex/vuex-is.md", "/VUE/vuex/vuex-mutation.md"],
             },
           ],
@@ -87,7 +83,6 @@ module.exports = {
             "/DB/",
             {
               text: "sample",
-              link: "/DB/fuctional/sample.md",
               children: ["/DB/fuctional/sample.md"],
             },
           ],
@@ -99,7 +94,6 @@ module.exports = {
             "/ETC/",
             {
               text: "sample",
-              link: "/ETC/fuctional/sample.md",
               children: ["/ETC/fuctional/sample.md"],
             },
           ],
@@ -111,7 +105,6 @@ module.exports = {
             "/Daily/",
             {
               text: "2021년",
-              link: "/Daily/2021/12.md",
               children: ["/Daily/2021/12.md"],
             },
           ],
