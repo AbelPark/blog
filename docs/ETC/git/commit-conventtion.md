@@ -11,8 +11,7 @@ description: Description of this page
 
 ## 구조
 ```
-
-
+type: title
 
 
 
