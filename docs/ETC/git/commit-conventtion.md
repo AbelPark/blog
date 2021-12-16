@@ -11,5 +11,7 @@ description: Description of this page
 
 ## 구조
 ```
-title: {type}: 동사 
+title: {type}: 동사
+contents
+footer
 ```
