@@ -93,8 +93,8 @@ module.exports = {
           children: [
             "/ETC/",
             {
-              text: "sample",
-              children: ["/ETC/fuctional/sample.md"],
+              text: "git",
+              children: ["/ETC/git/commit-conventtion.md"],
             },
           ],
         },
