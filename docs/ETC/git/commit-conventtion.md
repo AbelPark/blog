@@ -1,7 +1,7 @@
 ---
 lang: ko-KR
 title: 커밋 컨벤션
-description: Description of this page
+description: 깃 커밋 컨벤션 규칙 소개
 ---
 
 # GIT commit convention
@@ -84,5 +84,7 @@ Further paragraphs come after blank lines.
 If you use an issue tracker, put references to them at the bottom,
 like this:
 
-Resolves: #123
+Resolves: #123  
 See also: #456, #789
+
+> 참고: [유다시티 기술블로그](https://udacity.github.io/git-styleguide/)

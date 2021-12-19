@@ -96,6 +96,10 @@ module.exports = {
               text: "git",
               children: ["/ETC/git/commit-conventtion.md"],
             },
+            {
+              text: "markdown",
+              children: ["/ETC/markdown/markdown-syntax.md"],
+            },
           ],
         },
       ],
