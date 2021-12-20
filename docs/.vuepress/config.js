@@ -1,6 +1,6 @@
 module.exports = {
   lang: "ko-KR",
-  title: "Hello, VuePress!",
+  title: "Think deep, make simple",
   description: "This is my first VuePress site",
   head: [["link", { rel: "icon", href: "/images/logo-apeach.png" }]],
   themeConfig: {
