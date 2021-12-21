@@ -12,7 +12,7 @@ description: 깃 커밋 컨벤션 규칙 소개
 
 ## 규칙
 
-```text
+```text:no-line-numbers
 [summary (required)]
 type: verb ~
 

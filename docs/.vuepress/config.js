@@ -94,7 +94,7 @@ module.exports = {
             "/ETC/",
             {
               text: "git",
-              children: ["/ETC/git/commit-conventtion.md"],
+              children: ["/ETC/git/commit-conventtion.md", "/ETC/git/multiple-account.md"],
             },
             {
               text: "markdown",
