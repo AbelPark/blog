@@ -21,9 +21,9 @@ description: 여러 개의 GitHub 계정 사용하기
 
 ### 0. 조건
 
-- _SSH 키들을 ~/.ssh 디렉터리에 관리(macOS는 원래 그럼)._
-- _이후 작업은 모두 이 경로에서 처리하는 것을 기준으로 함_
-- _github는 계정당 하나의 SSH Key만 등록 가능하므로 사용할 계정만큼 생성,처리하면됨._
+- _ssh 키들을 ~/.ssh 디렉토리에 관리_
+- _이후 작업은 모두 이 경로에서 처리_
+- _ssh 키는 사용할 github 계정수 만큼 생성,등록해 사용_
 
 ssh 이름: **my**, 저장소 계정명: **abels**  
 ssh 이름: **your**, 저장소 계정명: **yours**
@@ -43,8 +43,7 @@ $ git remote -v
 
 ### 2. 기존 키체인 정보 삭제
 
-**Step1.** 키체인 접근 앱 실행  
-**Step2.** 왼쪽 기본 키체인 탭에서 로그인 선택 > github.com 삭제
+키체인 접근 앱 실행 > 왼쪽 기본 키체인 탭에서 로그인 선택 > github.com 삭제
 
 ### 3. ssh key 생성
 
@@ -115,13 +114,9 @@ Host github.com-your    # your 계정 용
 
 ### 8. 사용
 
-github.com에 Repository 정보에서 HTTPS, Github CLI, SSH 중 SSH를 선택하고 해당 주소 복사.
-
-주소는 `git@github.com:abels/your-repository.git` 이렇게 되어있을 텐데,
-
-우리는 ssh config 구성시 Host Name을 `github.com-` 으로 했기 때문에
-
-아래와 같이 변경해서 사용한다.
+github.com에 Repository 정보에서 `HTTPS`, `SSH`, `Github CLI` 중 `SSH`를 선택하고 해당 주소 복사.  
+주소는 `git@github.com:abels/your-repository.git` 이렇게 되어있을 텐데,  
+우리는 ssh config 구성시 Host Name을 `github.com-` 으로 했기 때문에 아래와 같이 변경해서 사용.
 
 - clone
 

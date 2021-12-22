@@ -74,6 +74,10 @@ module.exports = {
               text: "vuex",
               children: ["/VUE/vuex/vuex-is.md", "/VUE/vuex/vuex-mutation.md"],
             },
+            {
+              text: "vuepress",
+              children: ["/VUE/vuepress/vuepress-init.md"],
+            },
           ],
         },
       ],
