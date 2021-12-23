@@ -1,5 +1,5 @@
 ---
-lang: ko-KR
+lang: ko
 title: 라우터?
 description: Description of this page
 ---

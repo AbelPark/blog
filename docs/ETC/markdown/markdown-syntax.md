@@ -1,5 +1,5 @@
 ---
-lang: ko-KR
+lang: ko
 title: 마크다운 문법
 description: 기본적인 마크다운 문법 소개
 ---

@@ -1,5 +1,5 @@
 ---
-lang: ko-KR
+lang: ko
 title: 가드?
 description: Description of this page
 ---

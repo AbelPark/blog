@@ -1,5 +1,5 @@
 ---
-lang: ko-KR
+lang: ko
 title: 여러 개의 GitHub 계정 사용하기
 description: 여러 개의 GitHub 계정 사용하기
 ---

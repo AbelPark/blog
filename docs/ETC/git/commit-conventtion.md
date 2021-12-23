@@ -1,5 +1,5 @@
 ---
-lang: ko-KR
+lang: ko
 title: 커밋 컨벤션
 description: 깃 커밋 컨벤션 규칙 소개
 ---

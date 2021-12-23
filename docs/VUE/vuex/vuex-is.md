@@ -1,5 +1,5 @@
 ---
-lang: ko-KR
+lang: ko
 title: vuex란?
 description: Description of this page
 ---
