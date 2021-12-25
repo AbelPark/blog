@@ -62,4 +62,8 @@ vuepress의 기본적인 세팅값이 정리되어 있다.
 
 ##### head
 
-- 
+페이지 최상단 텍스트 링크 설정, 파비콘 설정
+
+```js
+head: [["link", { rel: "icon", href: "/images/logo-apeach.png" }]]
+```
