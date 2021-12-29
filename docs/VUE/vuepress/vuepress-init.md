@@ -67,3 +67,5 @@ vuepress의 기본적인 세팅값이 정리되어 있다.
 ```js
 head: [["link", { rel: "icon", href: "/images/logo-apeach.png" }]]
 ```
+
+##### themeConfig
