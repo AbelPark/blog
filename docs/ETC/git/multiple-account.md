@@ -4,7 +4,7 @@ title: 여러 개의 GitHub 계정 사용하기
 description: 여러 개의 GitHub 계정 사용하기
 ---
 
-# Git MacOS에서 여러 개의 GitHub 계정 사용하기
+# MacOS에서 여러 개의 GitHub 계정 사용하기
 
 ## 필요성
 
@@ -30,7 +30,7 @@ ssh 이름: **your**, 저장소 계정명: **yours**
 
 ### 1. remote repository 확인
 
-> `user@user-ui-MacBookAir your-repository` 여기는 레포지토리 내에서
+`user@user-ui-MacBookAir your-repository` 여기는 레포지토리 내에서
 
 ```bash:no-line-numbers
 $ git remote -v
@@ -47,13 +47,13 @@ $ git remote -v
 
 ### 3. ssh key 생성
 
-> `user@user-ui-MacBookAir .ssh` 이제부터 여기서 관리 시작함
+`user@user-ui-MacBookAir .ssh` 이제부터 여기서 명령어를 입력하자
 
 ```bash:no-line-numbers
 $ ssh-keygen -t rsa -b 4096 -C "abels@example.com" # 이메일은 github에 등록한 계정과 같은 메일을 등록한다.
 
 > Generating public/private rsa key pair.
-> Enter file in which to save the key (/Users/morris/.ssh/id_rsa): id_rsa_my  # 생성할 파일 명 입력 (아니면 그냥 Enter key, 이 경우는 id_rsa라는 기본 파일로 생성됨)
+> Enter file in which to save the key (/Users/user/.ssh/id_rsa): id_rsa_my  # 생성할 파일 명 입력 (아니면 그냥 Enter key, 이 경우는 id_rsa라는 기본 파일로 생성됨)
 > Enter passphrase (empty for no passphrase): # 비밀번호 설정할 경우 입력 (아니면 Enter key)
 > Enter same passphrase again: # 비밀번호 설정할 경우 입력 (아니면 Enter key)
 ```
