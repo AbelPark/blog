@@ -69,3 +69,5 @@ head: [["link", { rel: "icon", href: "/images/logo-apeach.png" }]]
 ```
 
 ##### themeConfig
+
+새해복믾이받으세요
