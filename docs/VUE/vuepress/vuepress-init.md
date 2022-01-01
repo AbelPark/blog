@@ -70,4 +70,5 @@ head: [["link", { rel: "icon", href: "/images/logo-apeach.png" }]]
 
 ##### themeConfig
 
+logo, sidebar 설정가능
 새해복믾이받으세요
