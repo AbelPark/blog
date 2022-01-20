@@ -277,12 +277,12 @@ Let's rename \*our-new-project\* to \*our-old-project\*.
 ```
 주석다는 방법.<sup id="a1">[[1]](#footnote01)</sup>
 
-<a name="footnote_1">1.</a> 주석설명 및 주석 달린 텍스트로 돌아가기...[↩](#a1)
+<a name="footnote01">1.</a> 주석설명 및 주석 달린 텍스트로 돌아가기...[↩](#a1)
 ```
 
 주석다는 방법.<sup id="a1">[[1]](#footnote01)</sup>
 
-<a name="footnote_1">1.</a> 주석설명 및 주석 달린 텍스트로 돌아가기...[↩](#a1)
+<a name="footnote01">1.</a> 주석설명 및 주석 달린 텍스트로 돌아가기...[↩](#a1)
 
 ## 체크박스 효과
 
