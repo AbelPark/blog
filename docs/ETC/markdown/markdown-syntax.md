@@ -262,4 +262,42 @@ _기울임_
 
 <img src="/images/logo-apeach.png" width="40%" height="30%" title="사이즈 변경원한다면" alt="귀여운 어피치" />
 
-> 참조: [ihoneymon GitHub](https://gist.github.com/ihoneymon/652be052a0727ad59601), [heropy 블로그](https://heropy.blog/2017/09/30/markdown/)
+## 마크다운 문법형식 무시
+
+```
+Let's rename \*our-new-project\* to \*our-old-project\*.
+```
+
+Let's rename \*our-new-project\* to \*our-old-project\*.
+
+마크다운 문법 형식이 적용되지 않으려면 \ 백틱으로 escape 처리 해주면 됨
+
+## 각주
+
+```
+주석다는 방법.<sup id="a1">[[1]](#footnote01)</sup>
+
+<a name="footnote_1">1.</a> 주석설명 및 주석 달린 텍스트로 돌아가기...[↩](#a1)
+```
+
+주석다는 방법.<sup id="a1">[[1]](#footnote01)</sup>
+
+<a name="footnote_1">1.</a> 주석설명 및 주석 달린 텍스트로 돌아가기...[↩](#a1)
+
+## 체크박스 효과
+
+```
+- [x] #739
+- [ ] https://github.com/octo-org/octo-repo/issues/740
+
+<input type="checkbox" checked disabled> 그냥 이렇게 쓰자
+```
+
+- [x] #739
+- [ ] https://github.com/octo-org/octo-repo/issues/740
+
+<input type="checkbox" checked disabled> 그냥 이렇게 쓰자
+
+GitHub에서만 위에 방법으로 되기 때문에 범용적으로 쓰이는 태그를 사용하자
+
+> 참조: [ihoneymon GitHub](https://gist.github.com/ihoneymon/652be052a0727ad59601), [heropy 블로그](https://heropy.blog/2017/09/30/markdown/), [GitHub 공식문서](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
