@@ -1,9 +1,11 @@
+const { defaultTheme } = require("@vuepress/theme-default")
+
 module.exports = {
   lang: "ko",
   title: "Think deep, make simple",
   description: "Front-end 개발자 블로그",
   head: [["link", { rel: "icon", href: "/images/logo-apeach.png" }]],
-  themeConfig: {
+  theme: defaultTheme({
     logo: "/images/logo-apeach.png",
     navbar: [
       {
@@ -119,5 +121,5 @@ module.exports = {
         },
       ],
     },
-  },
+  }),
 }
