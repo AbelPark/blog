@@ -1,10 +1,20 @@
 const { defaultTheme } = require("@vuepress/theme-default")
+const { viteBundler } = require("vuepress")
 
 module.exports = {
   lang: "ko",
   title: "Think deep, make simple",
   description: "Front-end 개발자 블로그",
   head: [["link", { rel: "icon", href: "/images/logo-apeach.png" }]],
+  bundler: viteBundler({
+    vuePluginOptions: {
+      template: {
+        compilerOptions: {
+          isCustomElement: (tag) => tag === "center",
+        },
+      },
+    },
+  }),
   theme: defaultTheme({
     logo: "/images/logo-apeach.png",
     navbar: [
