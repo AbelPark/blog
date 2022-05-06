@@ -4,4 +4,4 @@ title: sample
 description: Description of this page
 ---
 
-js sample
+함수형 프로그래밍
