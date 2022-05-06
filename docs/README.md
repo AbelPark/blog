@@ -6,5 +6,7 @@ JS
 TS
 Vue
 React
-Svelt
+Svelte
 Mysql
+
+댓글기능추가  
