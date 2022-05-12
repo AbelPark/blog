@@ -1,11 +1,18 @@
 const { defaultTheme } = require("@vuepress/theme-default")
 const { viteBundler } = require("vuepress")
+const { registerComponentsPlugin } = require("@vuepress/plugin-register-components")
+const { path } = require("@vuepress/utils")
 
 module.exports = {
   lang: "ko",
   title: "Think deep, make simple",
   description: "Front-end 개발자 블로그",
   head: [["link", { rel: "icon", href: "/images/logo-apeach.png" }]],
+  plugins: [
+    registerComponentsPlugin({
+      componentsDir: path.resolve(__dirname, "./components"),
+    }),
+  ],
   bundler: viteBundler({
     vuePluginOptions: {
       template: {
@@ -46,6 +53,7 @@ module.exports = {
         text: "Info",
         children: [
           { text: "AbelPark", link: "/Info/abelpark.md" },
+          { text: "aboutme", link: "/Info/aboutme.html" },
           { text: "github", link: "https://github.com/AbelPark" },
           { text: "Toy Project", children: [{ text: "휴대폰분실보호", link: "https://admin.mfinder.co.kr:10004/" }] },
         ],
