@@ -51,10 +51,7 @@ module.exports = {
       },
       {
         text: "Info",
-        children: [
-          { text: "AbelPark", link: "/Info/abelpark.md" },
-          { text: "github", link: "https://github.com/AbelPark" },
-        ],
+        children: [{ text: "github", link: "https://github.com/AbelPark" }],
       },
     ],
     sidebar: {
@@ -114,6 +111,10 @@ module.exports = {
         {
           children: [
             "/ETC/",
+            {
+              text: "browser",
+              children: ["/ETC/browser/browser-lander.md"],
+            },
             {
               text: "git",
               children: ["/ETC/git/commit-conventtion.md", "/ETC/git/multiple-account.md"],

@@ -2,11 +2,6 @@
 
 # Abel Park's world
 
-JS
-TS
-Vue
-React
-Svelte
-Mysql
-
-댓글기능추가
+- 오류와 해결한 과정을 기록합니다.
+- 회사 개발하며 얻은 인사이트를 기록합니다.
+- 공부한 것들을 기록합니다.
