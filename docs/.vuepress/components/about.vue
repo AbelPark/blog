@@ -39,57 +39,6 @@
         </div>
       </div>
     </section> -->
-
-    <section>
-      <h2>Skills<span class="period-mark">.</span></h2>
-      <div class="other">
-        <h3>Overall<span class="period-mark">.</span></h3>
-        <ul>
-          <li>실 사용자 입장을 고려하며 개발합니다. 개발의 최대 가치는 사용자 경험에 있다고 생각합니다</li>
-          <li>
-            개발자간 커뮤니케이션을 적극적으로 합니다. 서로간 커뮤니케이션을 통한 조화로운 소스코드는 프로젝트 유지,
-            보수에 큰 도움이 된다고 생각합니다.
-          </li>
-          <li>최신의 기술보단 상황에 따른 최적의 선택이 우선한다고 생각합니다.</li>
-          <li>필요하다면 능숙한 분야가 아니더라도 적극적으로 탐색하여 최적의 결과를 낼 수 있도록 노력합니다.</li>
-        </ul>
-      </div>
-      <div class="other">
-        <h3>Web<span class="period-mark">.</span></h3>
-        <ul>
-          <li>제휴사 인앱 연동 규격을 적용한 WebView 개발 경험이 많습니다.</li>
-          <li>Internet Explorer, Safari를 비롯해, 다양한 OS 및 브라우저를 지원할 수 있습니다.</li>
-          <li>lazy-loading, skeleton ui 등 최적화 경험이 있습니다.</li>
-          <li>Webpack 번들링 툴 환경설정에 익숙합니다.</li>
-        </ul>
-      </div>
-      <div class="other">
-        <h3>JavaScript<span class="period-mark">.</span></h3>
-        <ul>
-          <li>JavaScript와 TypeScript에 능숙합니다.</li>
-          <li>webpack설정을 통해</li>
-          <li>CommonJS, ES Modules의 모듈 시스템에 대해서 이해하고 이에 따라 적절한 도구를 활용합니다.</li>
-          <li>Node.js 생태계의 툴링에 익숙합니다.</li>
-        </ul>
-      </div>
-      <div class="other">
-        <h3>Vue.js<span class="period-mark">.</span></h3>
-        <ul>
-          <li>Vuex를 능숙하게 사용허여 전역 상태관리를 합니다.</li>
-          <li>vue-router를 이용한 미들웨어 세팅에 능숙합니다.</li>
-          <li>각종 컴포넌트 디자인 패턴에 능숙하며, 적절한 방식으로 컴포넌트를 분리합니다.</li>
-          <li>Testing Library를 사용하여 테스트코드를 작성할 수 있습니다.</li>
-        </ul>
-      </div>
-      <div class="other">
-        <h3>DevOps<span class="period-mark">.</span></h3>
-        <ul>
-          <li>GitHub Action을 통한 자동빌드를 적용한 경험이 있습니다.</li>
-          <li>Husky를 이용한 자동 버전관리를 적용한 경험이 있습니다.</li>
-          <li>디자인 툴(Figma, Zeplin)에 대한 이해도가 있습니다.</li>
-        </ul>
-      </div>
-    </section>
     <section>
       <h2>Work Experience<span class="period-mark">.</span></h2>
       <div class="row">
@@ -157,7 +106,56 @@
         </div>
       </div>
     </section>
-
+    <section>
+      <h2>Skills<span class="period-mark">.</span></h2>
+      <div class="other">
+        <h3>Overall<span class="period-mark">.</span></h3>
+        <ul>
+          <li>실 사용자 입장을 고려하며 개발합니다. 개발의 최대 가치는 사용자 경험에 있다고 생각합니다</li>
+          <li>
+            개발자간 커뮤니케이션을 적극적으로 합니다. 서로간 커뮤니케이션을 통한 조화로운 소스코드는 프로젝트 유지,
+            보수에 큰 도움이 된다고 생각합니다.
+          </li>
+          <li>최신의 기술보단 상황에 따른 최적의 선택이 우선한다고 생각합니다.</li>
+          <li>필요하다면 능숙한 분야가 아니더라도 적극적으로 탐색하여 최적의 결과를 낼 수 있도록 노력합니다.</li>
+        </ul>
+      </div>
+      <div class="other">
+        <h3>Web<span class="period-mark">.</span></h3>
+        <ul>
+          <li>제휴사 인앱 연동 규격을 적용한 WebView 개발 경험이 많습니다.</li>
+          <li>Internet Explorer, Safari를 비롯해, 다양한 OS 및 브라우저를 지원할 수 있습니다.</li>
+          <li>lazy-loading, skeleton ui 등 최적화 경험이 있습니다.</li>
+          <li>Webpack 번들링 툴 환경설정에 익숙합니다.</li>
+        </ul>
+      </div>
+      <div class="other">
+        <h3>JavaScript<span class="period-mark">.</span></h3>
+        <ul>
+          <li>JavaScript와 TypeScript에 능숙합니다.</li>
+          <li>webpack설정을 통해</li>
+          <li>CommonJS, ES Modules의 모듈 시스템에 대해서 이해하고 이에 따라 적절한 도구를 활용합니다.</li>
+          <li>Node.js 생태계의 툴링에 익숙합니다.</li>
+        </ul>
+      </div>
+      <div class="other">
+        <h3>Vue.js<span class="period-mark">.</span></h3>
+        <ul>
+          <li>Vuex를 능숙하게 사용허여 전역 상태관리를 합니다.</li>
+          <li>vue-router를 이용한 미들웨어 세팅에 능숙합니다.</li>
+          <li>각종 컴포넌트 디자인 패턴에 능숙하며, 적절한 방식으로 컴포넌트를 분리합니다.</li>
+          <li>Testing Library를 사용하여 테스트코드를 작성할 수 있습니다.</li>
+        </ul>
+      </div>
+      <div class="other">
+        <h3>DevOps<span class="period-mark">.</span></h3>
+        <ul>
+          <li>GitHub Action을 통한 자동빌드를 적용한 경험이 있습니다.</li>
+          <li>Husky를 이용한 자동 버전관리를 적용한 경험이 있습니다.</li>
+          <li>디자인 툴(Figma, Zeplin)에 대한 이해도가 있습니다.</li>
+        </ul>
+      </div>
+    </section>
     <section>
       <h2>Education<span class="period-mark">.</span></h2>
       <div class="other">
@@ -186,23 +184,44 @@
       <h2>Contect<span class="period-mark">.</span></h2>
       <div class="flex-box">
         <h5 style="padding-right: 15px; width: 100px">Email</h5>
-        <h5>parkhm0829@gmail.com</h5>
+        <h5 style="cursor: pointer" @click="copyEmail('parkhm0829@gmail.com')"><a>parkhm0829@gmail.com</a></h5>
       </div>
       <div class="flex-box">
         <h5 style="padding-right: 15px; width: 100px">H.P</h5>
-        <h5>01051005670</h5>
+        <h5><a href="tel:01051005670">01051005670</a></h5>
       </div>
       <div class="flex-box">
         <h5 style="padding-right: 15px; width: 100px">GitHub</h5>
-        <h5>https://github.com/abelpark</h5>
+        <h5><a href="https://github.com/abelpark" target="_blank">https://github.com/abelpark</a></h5>
       </div>
       <div class="flex-box">
         <h5 style="padding-right: 15px; width: 100px">Blog</h5>
-        <h5>https://abeldevlog.netlify.app/</h5>
+        <h5><a href="https://abeldevlog.netlify.app/" target="_blank">https://abeldevlog.netlify.app/</a></h5>
       </div>
     </section>
   </div>
 </template>
+
+<script lang="ts">
+import { defineComponent } from "vue"
+
+export default defineComponent({
+  setup() {
+    const copyEmail = (str: string) => {
+      const textarea = document.createElement("textarea")
+      textarea.textContent = str
+      document.body.append(textarea)
+      textarea.select()
+      document.execCommand("copy")
+      textarea.remove()
+      alert("복사됐습니다!")
+    }
+    return {
+      copyEmail,
+    }
+  },
+})
+</script>
 
 <style scoped>
 * {

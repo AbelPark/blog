@@ -53,7 +53,6 @@ module.exports = {
         text: "Info",
         children: [
           { text: "AbelPark", link: "/Info/abelpark.md" },
-          { text: "aboutme", link: "/Info/aboutme.html" },
           { text: "github", link: "https://github.com/AbelPark" },
           { text: "Toy Project", children: [{ text: "휴대폰분실보호", link: "https://admin.mfinder.co.kr:10004/" }] },
         ],
