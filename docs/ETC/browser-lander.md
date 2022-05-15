@@ -117,7 +117,7 @@ Javascript + Css를 조합하여 애니메이션이 많거나 레이아웃 변�
 vue, react 등 프론트엔드 프레임워크에서 사용하는 기법으로, 여러개의 노드를 수정하여 여러번의 레이아웃 재계산과정으로 리렌더링을 여러차례 수행하는 것이 아니라, 모든 변화를 하나로 묶어 리렌더링을 수행하게 만든다.
 
 <figure>
-  <img alt="virtual_dom" src='/images/browser-virtual_dom.png' />
+  <img alt="virtual_dom" src='/images/browser-virtual.png' />
   <figcaption style="text-align:center; font-style: italic;">https://codingmedic.wordpress.com/2020/11/10/the-virtual-dom</figcaption>
 </figure>
 
