@@ -37,10 +37,10 @@ module.exports = {
         text: "VUE",
         link: "/VUE/",
       },
-      {
-        text: "DB",
-        link: "/DB/",
-      },
+      // {
+      //   text: "DB",
+      //   link: "/DB/",
+      // },
       {
         text: "ETC",
         link: "/ETC/",
@@ -96,17 +96,17 @@ module.exports = {
           ],
         },
       ],
-      "/DB/": [
-        {
-          children: [
-            "/DB/",
-            {
-              text: "sample",
-              children: ["/DB/fuctional/sample.md"],
-            },
-          ],
-        },
-      ],
+      // "/DB/": [
+      //   {
+      //     children: [
+      //       "/DB/",
+      //       {
+      //         text: "sample",
+      //         children: ["/DB/fuctional/sample.md"],
+      //       },
+      //     ],
+      //   },
+      // ],
       "/ETC/": [
         {
           children: [

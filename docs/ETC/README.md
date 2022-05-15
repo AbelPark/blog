@@ -1,8 +1,10 @@
 ---
 lang: ko
 title: Intro
-description: Description of this page
+description: 페이지설명
+head:
+  - - meta
+    - name: foo
+      content: yaml array syntax
+  - [meta, { name: bar, content: square brackets syntax }]
 ---
-
-리드미
-계정테스트

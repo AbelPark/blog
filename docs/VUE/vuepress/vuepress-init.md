@@ -67,9 +67,3 @@ vuepress의 기본적인 세팅값이 정리되어 있다.
 ```js
 head: [["link", { rel: "icon", href: "/images/logo-apeach.png" }]]
 ```
-
-##### themeConfig
-
-logo, sidebar 설정가능
-새해복믾이받으세요
-파이팅!
