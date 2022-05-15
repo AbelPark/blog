@@ -116,10 +116,10 @@ Javascript + Css를 조합하여 애니메이션이 많거나 레이아웃 변�
 
 vue, react 등 프론트엔드 프레임워크에서 사용하는 기법으로, 여러개의 노드를 수정하여 여러번의 레이아웃 재계산과정으로 리렌더링을 여러차례 수행하는 것이 아니라, 모든 변화를 하나로 묶어 리렌더링을 수행하게 만든다.
 
-<figure>
+<!-- <figure>
   <img art="virtual_dom" src='/images/browser-virtual_dom.png' />
   <figcaption style="text-align:center; font-style: italic;">https://codingmedic.wordpress.com/2020/11/10/the-virtual-dom</figcaption>
-</figure>
+</figure> -->
 
 사실, 이과정은 virtual DOM 이 없이도 이뤄질수 있다. 변화가 있을 때, 그 변화를 묶어서 DOM fragment 에 적용한 다음에 기존 DOM 에 던져주면 된다.  
 결국 virtual DOM의 목적은 DOM fragment를 관리하는 과정을 수동으로 하나하나 작업 할 필요 없이, **자동화하고 추상화하는 것**에 있다. 뿐만 아니라, 기존 값 중 어떤게 바뀌었고 어떤게 바뀌지 않았는지 계속 파악하고 있어야하는데, 이것도 virtual DOM 이 이걸 자동으로 해주면서 수월한 작업을 가능하게 해준다.
