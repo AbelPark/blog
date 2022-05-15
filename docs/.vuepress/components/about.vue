@@ -132,7 +132,6 @@
         <h3>JavaScript<span class="period-mark">.</span></h3>
         <ul>
           <li>JavaScript와 TypeScript에 능숙합니다.</li>
-          <li>webpack설정을 통해</li>
           <li>CommonJS, ES Modules의 모듈 시스템에 대해서 이해하고 이에 따라 적절한 도구를 활용합니다.</li>
           <li>Node.js 생태계의 툴링에 익숙합니다.</li>
         </ul>

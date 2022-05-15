@@ -17,6 +17,16 @@ description: 브라우저 렌더링 과정과 최적화
 3. Layout: viewport에 따라 노드의 위치, 크기 연산
 4. Paint: 위치, 크기 외 컬러, 이미지 등의 효과가 모두 처리되어 화면에 그려짐
 
+<figure>
+  <img art="webkit" src='/images/browser-webkit.png'>
+  <figcaption style="text-align:center;font-style: italic;">webkit flow</figcaption>
+</figure>
+
+<figure>
+  <img art="gecko" src='/images/browser-gecko.png'>
+  <figcaption style="text-align:center;font-style: italic;">gecko flow</figcaption>
+</figure>
+
 ## 렌더링이란?
 
 - 렌더링이란 HTML, CSS, JavaScript등 개발자가 작성한 문서를 브라우저에서 그래픽 형태로 출력하는 과정
@@ -29,16 +39,6 @@ description: 브라우저 렌더링 과정과 최적화
 
 서버로부터 받은 HTML, CSS를 다운로드 받는과정.  
 HTML, CSS파일은 단순한 텍스트이므로 연산과 관리가 유리하도록 Object Model인 **DOM Tree(HTML), CSSOM(CSS)** 으로 만들어진다.
-
-<figure>
-  <img art="DOM" src='/images/browser-DOM.png'>
-  <figcaption style="text-align:center;font-style: italic;">DOM (출처 http://bit.ly/3137pmh)</figcaption>
-</figure>
-
-<figure>
-  <img art="CSSOM" src='/images/browser-CSSOM.png'>
-  <figcaption style="text-align:center;font-style: italic;">CSSOM (출처 http://bit.ly/3137pmh)</figcaption>
-</figure>
 
 각 문서(HTML, CSS)가 어떻게 파싱되고 어떻게 DOM Tree가 되는지 자세한 과정은 [구글 개발자 문서]를 통해 확인.
 
@@ -112,11 +112,23 @@ Javascript + Css를 조합하여 애니메이션이 많거나 레이아웃 변�
 
 단순히 생각하면 0.1초에 1px씩 이동하는 요소보다 3px씩 이동하는 요소가 Reflow, Repaint 연산비용이 3배 줄어든다고 볼 수 있다. 따라서 부드러운 효과를 줄여 성능을 개선할 수 있다.
 
+##### 5) virtual-DOM
+
+vue, react 등 프론트엔드 프레임워크에서 사용하는 기법으로, 여러개의 노드를 수정하여 여러번의 레이아웃 재계산과정으로 리렌더링을 여러차례 수행하는 것이 아니라, 모든 변화를 하나로 묶어 리렌더링을 수행하게 만든다.
+
+<figure>
+  <img art="virtual dom" src='/images/browser-virtual_dom.png'>
+  <figcaption style="text-align:center;font-style: italic;">https://codingmedic.wordpress.com/2020/11/10/the-virtual-dom/w</figcaption>
+</figure>
+
+사실, 이과정은 virtual DOM 이 없이도 이뤄질수 있다. 변화가 있을 때, 그 변화를 묶어서 DOM fragment 에 적용한 다음에 기존 DOM 에 던져주면 된다.
+결국 virtual DOM의 목적은 DOM fragment를 관리하는 과정을 수동으로 하나하나 작업 할 필요 없이, **자동화하고 추상화하는 것**에 있다. 뿐만 아니라, 기존 값 중 어떤게 바뀌었고 어떤게 바뀌지 않았는지 계속 파악하고 있어야하는데, 이것도 virtual DOM 이 이걸 자동으로 해주면서 수월한 작업을 가능하게 해준다.
+
 ---
 
 <a name="footnote01">1.</a> 파이어폭스 Gecko, 사파리 Webkit, 크롬 Blink [↩](#a1)  
-<a name="footnote02">2.</a> 그래픽이 표시되는 브라우저의 영역, 크기. viewport는 모바일의 경우 디스플레이의 크기, PC의 경우 브라우저 창의 크기에 따라 달라집니다. 그리고 화면에 그려지는 각 요소들의 크기와 위치는 %, vh, vw와 같이 상대적으로 계산하여 그려지는 경우가 많기 때문에 viewport 크기가 달라질 경우 매번 계산을 다시해야 합니다. [↩](#a2)
+<a name="footnote02">2.</a> 그래픽이 표시되는 브라우저의 영역, 크기. viewport는 모바일의 경우 디스플레이의 크기, PC의 경우 브라우저 창의 크기에 따라 달라진다. 그리고 화면에 그려지는 각 요소들의 크기와 위치는 %, vh, vw와 같이 상대적으로 계산하여 그려지는 경우가 많기 때문에 viewport 크기가 달라질 경우 매번 계산을 다시해야 한다. [↩](#a2)
 
 [구글 개발자 문서]: https://web.dev/critical-rendering-path-constructing-the-object-model/ "구글 개발자 문서"
 
-> 참조 [박스여우 블로그](https://boxfoxs.tistory.com/408)
+> 참조 [박스여우 블로그](https://boxfoxs.tistory.com/408), [How Browsers Work: Behind the scenes of modern web browsers](https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/#DOM)
