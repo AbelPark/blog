@@ -18,12 +18,12 @@ description: 브라우저 렌더링 과정과 최적화
 4. Paint: 위치, 크기 외 컬러, 이미지 등의 효과가 모두 처리되어 화면에 그려짐
 
 <figure>
-  <img art="webkit" src='/images/browser-webkit.png'>
+  <img art="webkit" src='/images/browser-webkit.png' />
   <figcaption style="text-align:center;font-style: italic;">webkit flow</figcaption>
 </figure>
 
 <figure>
-  <img art="gecko" src='/images/browser-gecko.png'>
+  <img art="gecko" src='/images/browser-gecko.png' />
   <figcaption style="text-align:center;font-style: italic;">gecko flow</figcaption>
 </figure>
 
@@ -117,8 +117,8 @@ Javascript + Css를 조합하여 애니메이션이 많거나 레이아웃 변�
 vue, react 등 프론트엔드 프레임워크에서 사용하는 기법으로, 여러개의 노드를 수정하여 여러번의 레이아웃 재계산과정으로 리렌더링을 여러차례 수행하는 것이 아니라, 모든 변화를 하나로 묶어 리렌더링을 수행하게 만든다.
 
 <figure>
-  <img art="virtual dom" src='/images/browser-virtual_dom.png'>
-  <figcaption style="text-align:center;font-style: italic;">https://codingmedic.wordpress.com/2020/11/10/the-virtual-dom/w</figcaption>
+  <img art="virtual_dom" src='/images/browser-virtual_dom.png' />
+  <figcaption style="text-align:center; font-style: italic;">https://codingmedic.wordpress.com/2020/11/10/the-virtual-dom</figcaption>
 </figure>
 
 사실, 이과정은 virtual DOM 이 없이도 이뤄질수 있다. 변화가 있을 때, 그 변화를 묶어서 DOM fragment 에 적용한 다음에 기존 DOM 에 던져주면 된다.  

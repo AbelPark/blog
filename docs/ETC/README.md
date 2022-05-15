@@ -1,5 +1,5 @@
 ---
-lang: en-US
+lang: ko
 title: Intro
 description: Description of this page
 ---
