@@ -111,10 +111,8 @@ module.exports = {
         {
           children: [
             "/ETC/",
-            {
-              text: "browser",
-              children: ["/ETC/browser/browser-lander.md"],
-            },
+            "/ETC/browser-lander.md",
+            "/ETC/http-rest.md",
             {
               text: "git",
               children: ["/ETC/git/commit-conventtion.md", "/ETC/git/multiple-account.md"],
