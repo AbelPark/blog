@@ -2,6 +2,9 @@
 lang: ko
 title: vuepress 시작하기
 description: vuepress 시작하기
+routeMeta:
+  tags: [vuepress]
+  category: 기술
 ---
 
 # VuePress 시작하기

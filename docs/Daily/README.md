@@ -41,5 +41,3 @@ function fetchUser(id) {
   })
 }
 ```
-
-이런식으로

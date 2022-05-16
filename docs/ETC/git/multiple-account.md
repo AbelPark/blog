@@ -2,6 +2,9 @@
 lang: ko
 title: 여러 개의 GitHub 계정 사용하기
 description: 여러 개의 GitHub 계정 사용하기
+routeMeta:
+  tags: [Git]
+  category: 기술
 ---
 
 # MacOS에서 여러 개의 GitHub 계정 사용하기

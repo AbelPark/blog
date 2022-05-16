@@ -1,7 +1,10 @@
 ---
 lang: ko
-title: browser landering
-description: 브라우저 렌더링 과정과 최적화
+title: 브라우저 렌더링 과정 & 최적화
+description: 브라우저 렌더링 & 최적화
+routeMeta:
+  tags: [ETC]
+  category: 이론
 ---
 
 # 브라우저 렌더링 과정

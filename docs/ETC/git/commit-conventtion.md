@@ -1,7 +1,10 @@
 ---
 lang: ko
-title: 커밋 컨벤션
+title: 깃 커밋 컨벤션 규칙 소개
 description: 깃 커밋 컨벤션 규칙 소개
+routeMeta:
+  tags: [Git]
+  category: 방법론
 ---
 
 # GIT commit convention

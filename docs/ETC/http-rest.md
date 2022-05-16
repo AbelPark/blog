@@ -1,7 +1,10 @@
 ---
 lang: ko
-title: REST
+title: REST 이해하기
 description: REST 이해하기
+routeMeta:
+  tags: [ETC]
+  category: 이론
 ---
 
 # REST(Representational State Transfer)
