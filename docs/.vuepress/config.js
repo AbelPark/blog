@@ -113,6 +113,7 @@ module.exports = {
             "/ETC/",
             "/ETC/browser-lander.md",
             "/ETC/http-rest.md",
+            "/ETC/bundling-transpile",
             {
               text: "git",
               children: ["/ETC/git/commit-conventtion.md", "/ETC/git/multiple-account.md"],

@@ -139,7 +139,7 @@
       <div class="other">
         <h3>Vue.js<span class="period-mark">.</span></h3>
         <ul>
-          <li>Vuex를 능숙하게 사용허여 전역 상태관리를 합니다.</li>
+          <li>Vuex를 능숙하게 사용하여 전역 상태관리를 합니다.</li>
           <li>vue-router를 이용한 미들웨어 세팅에 능숙합니다.</li>
           <li>각종 컴포넌트 디자인 패턴에 능숙하며, 적절한 방식으로 컴포넌트를 분리합니다.</li>
           <li>Testing Library를 사용하여 테스트코드를 작성할 수 있습니다.</li>
