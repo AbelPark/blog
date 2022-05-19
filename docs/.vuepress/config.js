@@ -111,9 +111,12 @@ module.exports = {
         {
           children: [
             "/ETC/",
+            "/ETC/jargon.md",
+            "/ETC/concept-dom.md",
             "/ETC/browser-lander.md",
             "/ETC/http-rest.md",
             "/ETC/bundling-transpile",
+            "/ETC/concept-oop",
             {
               text: "git",
               children: ["/ETC/git/commit-conventtion.md", "/ETC/git/multiple-account.md"],

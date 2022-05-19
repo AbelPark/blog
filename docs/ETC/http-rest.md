@@ -132,4 +132,4 @@ REST 기반으로 서비스 API를 구현한 것
    - /리소스명/리소스 ID/관계가 있는 다른 리소스명
    - Ex) `GET : /users/{userid}/devices` (일반적으로 소유 ‘has’의 관계를 표현할 때)
 
-> 참조 [Heee's Development Blog](https://gmlwjd9405.github.io/2018/09/21/rest-and-restful.html),
+> 참조 [Heee's Development Blog](https://gmlwjd9405.github.io/2018/09/21/rest-and-restful.html)
