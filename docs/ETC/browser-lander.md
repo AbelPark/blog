@@ -121,7 +121,7 @@ vue, react 등 프론트엔드 프레임워크에서 사용하는 기법으로, 
 
 <figure>
   <img alt="virtual_dom" src='/images/browser-virtual.png' />
-  <figcaption style="text-align:center; font-style: italic;">https://codingmedic.wordpress.com/2020/11/10/the-virtual-dom</figcaption>
+  <figcaption style="text-align:center; font-style: italic;"><a href="https://codingmedic.wordpress.com/2020/11/10/the-virtual-dom" target="_blank">참조 링크</a></figcaption>
 </figure>
 
 사실, 이과정은 virtual DOM 이 없이도 이뤄질수 있다. 변화가 있을 때, 그 변화를 묶어서 DOM fragment 에 적용한 다음에 기존 DOM 에 던져주면 된다.  

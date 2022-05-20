@@ -111,7 +111,7 @@ module.exports = {
         {
           children: [
             "/ETC/",
-            "/ETC/jargon.md",
+            // "/ETC/jargon.md",
             "/ETC/concept-dom.md",
             "/ETC/browser-lander.md",
             "/ETC/http-rest.md",
