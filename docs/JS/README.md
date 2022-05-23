@@ -4,4 +4,4 @@ title: Intro
 description: Description of this page
 ---
 
-js intro
+<TagList category="/JS/" />

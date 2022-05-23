@@ -2,9 +2,6 @@
 lang: ko
 title: 개발용어 정리
 description: 개발용어
-routeMeta:
-  tags: [ETC]
-  category: 이론
 ---
 
 # 개발 용어정리

@@ -59,10 +59,12 @@ module.exports = {
         {
           children: [
             "/JS/",
-            {
-              text: "sample",
-              children: ["/JS/fuctional/sample.md"],
-            },
+            "/JS/execution-context.md",
+            "/JS/concept-hoisting.md",
+            "/JS/concept-closure.md",
+            "/JS/concept-this.md",
+            "/JS/concept-scope.md",
+            "/JS/var-let-const.md",
           ],
         },
       ],
@@ -115,8 +117,9 @@ module.exports = {
             "/ETC/concept-dom.md",
             "/ETC/browser-lander.md",
             "/ETC/http-rest.md",
-            "/ETC/bundling-transpile",
+            "/ETC/bundling-transpile.md",
             "/ETC/concept-oop",
+            "/ETC/http-rest.md",
             {
               text: "git",
               children: ["/ETC/git/commit-conventtion.md", "/ETC/git/multiple-account.md"],
