@@ -17,7 +17,7 @@ module.exports = {
     vuePluginOptions: {
       template: {
         compilerOptions: {
-          isCustomElement: tag => tag === "center",
+          isCustomElement: (tag) => tag === "center",
         },
       },
     },
@@ -70,7 +70,14 @@ module.exports = {
         {
           text: "JS Deep Dive",
           collapsible: true,
-          children: ["/JS/DeepDive/01-programing.md", "/JS/DeepDive/02-javascript.md"],
+          children: [
+            "/JS/DeepDive/01-programing.md",
+            "/JS/DeepDive/02-javascript.md",
+            "/JS/DeepDive/03-runtime.md",
+            "/JS/DeepDive/04-variable.md",
+            "/JS/DeepDive/05-expression.md",
+            "/JS/DeepDive/06-dataType.md",
+          ],
         },
       ],
       "/TS/": [
