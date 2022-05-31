@@ -17,7 +17,7 @@ module.exports = {
     vuePluginOptions: {
       template: {
         compilerOptions: {
-          isCustomElement: (tag) => tag === "center",
+          isCustomElement: tag => tag === "center",
         },
       },
     },
