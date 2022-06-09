@@ -2,6 +2,9 @@
 lang: ko
 title: 마크다운 문법
 description: 기본적인 마크다운 문법 소개
+routeMeta:
+  tags: [ETC]
+  category: 기술
 ---
 
 # Markdown 문법
@@ -261,5 +264,85 @@ Let's rename \*our-new-project\* to \*our-old-project\*.
 <input type="checkbox" checked disabled> 그냥 이렇게 쓰자
 
 GitHub에서만 위에 방법으로 되기 때문에 범용적으로 쓰이는 태그를 사용하자
+
+## VuePress 커스텀 UI
+
+````md
+::: tip
+This is a tip
+:::
+
+::: warning
+This is a warning
+:::
+
+::: danger STOP
+Danger zone, do not proceed
+:::
+
+::: details Click me to view the code
+
+```js
+console.log("Hello, VuePress!")
+```
+
+:::
+````
+
+::: tip
+This is a tip
+:::
+
+::: warning
+This is a warning
+:::
+
+::: danger STOP
+Danger zone, do not proceed
+:::
+
+::: details Click me to view the code
+
+```js
+console.log("Hello, VuePress!")
+```
+
+:::
+
+````md
+:::: code-group
+::: code-group-item FOO
+
+```js
+const foo = "foo"
+```
+
+:::
+::: code-group-item BAR
+
+```js
+const bar = "bar"
+```
+
+:::
+::::
+````
+
+:::: code-group
+::: code-group-item FOO
+
+```js
+const foo = "foo"
+```
+
+:::
+::: code-group-item BAR
+
+```js
+const bar = "bar"
+```
+
+:::
+::::
 
 > 참조: [ihoneymon GitHub](https://gist.github.com/ihoneymon/652be052a0727ad59601), [heropy 블로그](https://heropy.blog/2017/09/30/markdown/), [GitHub 공식문서](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)

@@ -30,24 +30,16 @@ module.exports = {
         link: "/JS/",
       },
       {
-        text: "TS",
-        link: "/TS/",
-      },
-      {
         text: "VUE",
         link: "/VUE/",
       },
-      // {
-      //   text: "DB",
-      //   link: "/DB/",
-      // },
+      {
+        text: "REACT",
+        link: "/REACT/",
+      },
       {
         text: "ETC",
         link: "/ETC/",
-      },
-      {
-        text: "Daily",
-        link: "/Daily/",
       },
       {
         text: "Info",
@@ -80,29 +72,10 @@ module.exports = {
           ],
         },
       ],
-      "/TS/": [
-        {
-          children: [
-            "/TS/",
-            {
-              text: "sample",
-              children: ["/TS/fuctional/sample.md"],
-            },
-          ],
-        },
-      ],
       "/VUE/": [
         {
           children: [
             "/VUE/",
-            {
-              text: "vue-router",
-              children: ["/VUE/vue-router/vue-router-is.md", "/VUE/vue-router/vue-router-navigation.md"],
-            },
-            {
-              text: "vuex",
-              children: ["/VUE/vuex/vuex-is.md", "/VUE/vuex/vuex-mutation.md"],
-            },
             {
               text: "vuepress",
               children: ["/VUE/vuepress/vuepress-init.md"],
@@ -110,20 +83,20 @@ module.exports = {
           ],
         },
       ],
-      // "/DB/": [
-      //   {
-      //     children: [
-      //       "/DB/",
-      //       {
-      //         text: "sample",
-      //         children: ["/DB/fuctional/sample.md"],
-      //       },
-      //     ],
-      //   },
-      // ],
+      "/REACT/": ["/REACT/react-vue.md"],
       "/ETC/": [
         {
           children: [
+            {
+              text: "Git",
+              collapsible: true,
+              children: ["/ETC/git/commit-conventtion.md", "/ETC/git/multiple-account.md"],
+            },
+            {
+              text: "MAC",
+              collapsible: true,
+              children: ["/ETC/mac/terminal-command.md"],
+            },
             "/ETC/",
             // "/ETC/jargon.md",
             "/ETC/concept-dom.md",
@@ -132,25 +105,7 @@ module.exports = {
             "/ETC/bundling-transpile.md",
             "/ETC/concept-oop",
             "/ETC/http-rest.md",
-            {
-              text: "git",
-              children: ["/ETC/git/commit-conventtion.md", "/ETC/git/multiple-account.md"],
-            },
-            {
-              text: "markdown",
-              children: ["/ETC/markdown/markdown-syntax.md"],
-            },
-          ],
-        },
-      ],
-      "/Daily/": [
-        {
-          children: [
-            "/Daily/",
-            {
-              text: "2021년",
-              children: ["/Daily/2021/12.md"],
-            },
+            "/ETC/markdown-syntax.md",
           ],
         },
       ],
