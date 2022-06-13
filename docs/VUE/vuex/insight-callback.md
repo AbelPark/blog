@@ -98,8 +98,8 @@ callAppApi({ state, commit, dispatch }, payload: ConnectAppApi) {
 // page.vue
 onMounted(() => {
   // 하나 원큐 체크
-  if (channelChecker(constant.channel.hana, state.app2.pcode)) {
-    dispatch("app2/callAppApi", { attemp: 0, api: "HanaPartner", callback: callback })
+  if (조건) {
+    dispatch("page/callAppApi", { attemp: 0, api: "api명", callback: callback })
   }
 })
 ```
