@@ -38,6 +38,10 @@ module.exports = {
         link: "/REACT/",
       },
       {
+        text: "DB",
+        link: "/DB/",
+      },
+      {
         text: "ETC",
         link: "/ETC/",
       },
@@ -84,6 +88,17 @@ module.exports = {
         },
       ],
       "/REACT/": ["/REACT/react-vue.md"],
+      "/DB/": [
+        {
+          children: [
+            {
+              text: "Mysql",
+              collapsible: true,
+              children: ["/DB/mysql/control-error.md"],
+            },
+          ],
+        },
+      ],
       "/ETC/": [
         {
           children: [

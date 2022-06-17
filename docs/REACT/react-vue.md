@@ -41,47 +41,90 @@ npx create-react-app {my-app} --typescript
 └── tsconfig.json
 ```
 
-## 2. 문법상 차이
+## 2. 핵심 문법(props, watch, compute)
+
+::: tip
+vue는 파일 자체에 템플릿과 스크립트를 구성하여 파일 하나당 한가지의 컴포넌트를 구성하는 방식이 권장된다.  
+react는 함수에 태그를 리턴하여 컴포넌트를 구성하는 방식이 권장된다. 한가지 파일에 여러개의 컴포넌트를 구성할 수 있다.
+:::
+
+### 1_props
+
+컴포넌트 태그에 속성값 내려받기(함수 또한 전달할 수 있다.)
+
+부모창
 
 :::: code-group
 ::: code-group-item Vue
 
 ```vue
+<!-- vue는 파스칼케이스 객체 식별자가 태그명으로 설정될 때
+자동적으로 케밥케이스 형식도 가능하도록 설정됨. -->
+<!-- 물론 파스칼케이스 그대로 사용해도됨 -->
+
+<!-- app.vue -->
 <template>
-  <div>Vue.js</div>
+  <my-compo title="vue" />
 </template>
 
 <script lang="ts">
+import MyCompo from "../MyCompo.vue"
+
 export default defineComponent({
-  setup() {},
+  components: {
+    MyCompo,
+  },
 })
 </script>
 
-<style></style>
+<!-- MyCompo.vue -->
+<template>
+  <h1>{{ title }}</h1>
+</template>
+
+<script lang="ts">
+import MyCompo from "../MyCompo.vue"
+
+export default defineComponent({
+  props: {
+    title: {
+      type: string
+      default: ""
+    }
+  },
+  setup(props) {
+    const title = props.title
+    return  {
+      title
+    }
+  }
+})
+</script>
 ```
 
 :::
 
 ::: code-group-item React
 
-```js
-// index.tsx
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-)
-
+```tsx
 // App.tsx
+import { MyHeader } from "./views/MyHeader"
+
 const App = () => {
   return (
-    <div className="App">react</div>
+    <div className="App">
+      <MyHeader title="react" />
+    </div>
+  )
+}
+
+// MyHeader.tsx
+export const MyHeader = props => {
+  console.log(props) // object title:react
+  return (
+    <header>
+      <h1>{props.title}</h1>
+    </header>
   )
 }
 ```
@@ -89,17 +132,67 @@ const App = () => {
 :::
 ::::
 
-vue는 파일 자체에 템플릿과 스크립트를 구성하여 파일 하나당 한가지의 컴포넌트를 구성하는 방식이 권장된다.
-react는 함수에 태그를 리턴하여 컴포넌트를 구성하는 방식이 권장된다. 한가지 파일에 여러개의 컴포넌트를 구성할 수 있다.
+### 2\_ useState
 
-## 3. 핵심 기능 문법(watch, compute)
+상태관리 함수이다. vue3에서 ref, reactive와 동일한 동작을 한다.
 
-## 4. 모듈화
+```tsx
+import { useState } from "react"
 
-## 5. 전역 상태관리
+const _mode = useState("welcome")
+console.log(_mode) // ["welcome", fuction]
+// 배열의 0번은 상태값 1번은 상태값 변환 함수이다.
 
-## 6. react 쿼리
+export const MyHeader = props => {
+  // 그래서 useState 훅 선언시 일반적으로
+  const [mode, setMode] = useState("welcome")
+  console.log(mode) // welcome
+  return (
+    <div>
+      {props.topics.map((item, index) => {
+        return (
+          <ul key={index}>
+            <li
+              id={item.id}
+              onClick={e => {
+                e.preventDefault()
+                props.onChangeMode(e.target.id)
+              }}
+            >
+              {item.title} {index}
+            </li>
+            <p onClick={() => setMode(item.body)}>{item.body}</p>
+          </ul>
+        )
+      })}
+    </div>
+  )
+}
+```
 
-## 7. recoil
+## 3. 모듈화
+
+## 4. 전역 상태관리
+
+## 5. react 쿼리
+
+## 6. recoil
 
 > 참조: [블로그](https://velog.io/@ordidxzero/cra-project-structure)
+
+:::: code-group
+::: code-group-item Vue
+
+```vue
+
+```
+
+:::
+::: code-group-item React
+
+```js
+
+```
+
+:::
+::::
