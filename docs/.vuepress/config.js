@@ -87,7 +87,7 @@ module.exports = {
           ],
         },
       ],
-      "/REACT/": ["/REACT/react-vue.md"],
+      "/REACT/": ["/REACT/react-vue.md", "/REACT/react-query.md"],
       "/DB/": [
         {
           children: [

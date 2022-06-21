@@ -170,7 +170,75 @@ export const MyHeader = props => {
 }
 ```
 
-## 3. 모듈화
+## 3. 라우터
+
+react-router-dom 라이브러리를 사용하여 관리합니다.  
+앱에서 발생하는 라우팅이 location나 history와 같은 브라우저 내장 API와 연동됩니다.
+
+### 핵심 함수
+
+- useNavigate
+
+동일 출처(URL)에서 path(또는 query string, fregment)를 이동시키는 훅 입니다.  
+vue의 router push와 유사한 기능을 구현합니다.
+
+```tsx
+import { useQuery } from "react-query"
+import { useNavigate } from "react-router-dom"
+
+export const RQExample = () => {
+  const navigate = useNavigate()
+  const GoPath = (idx: number) => navigate(`/healthdetail/${idx}`) // 라우터 경로
+  const { data, isLoading } = useQuery("example", fetchAPi, {
+    staleTime: 5000,
+  })
+  if (isLoading) {
+    return <h1>Loading</h1>
+  }
+  return (
+    <>
+      <h2>Example</h2>
+      {data?.data.Body.map(({ Title }: any, idx: number) => (
+        <div key={idx} onClick={() => GoPath(idx)}>
+          {Title}
+        </div>
+      ))}
+    </>
+  )
+}
+```
+
+::: tip
+react 컴포넌트 내부에서 동작하는 라이브러리 함수들은 React 컴포넌트가 되는 조건에서만 동작합니다.
+그 외에도 Link 태그를 이용하는 방법이 있습니다.
+:::
+
+```tsx
+return (
+  <>
+    <h2>Example</h2>
+    {data?.data.Body.map(({ Title }: any, idx: number) => (
+      <Link key={idx} to="/healthdetail">
+        <div>{Title}</div>
+      </Link>
+    ))}
+  </>
+)
+```
+
+- useParams
+
+url의 parameter 객체를 리턴하는 훅입니다.  
+vue의 `const { params } = useRoute()` 와 동일한 값을 리턴합니다.
+
+```tsx
+import { useParams } from "react-router-dom"
+
+export const Healthdetail = () => {
+  const idx = useParams()
+  console.log(idx) // {idx:0}
+}
+```
 
 ## 4. 전역 상태관리
 
