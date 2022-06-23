@@ -41,14 +41,12 @@ npx create-react-app {my-app} --typescript
 └── tsconfig.json
 ```
 
-## 2. 핵심 문법(props, watch, compute)
+## 2. props
 
 ::: tip
 vue는 파일 자체에 템플릿과 스크립트를 구성하여 파일 하나당 한가지의 컴포넌트를 구성하는 방식이 권장된다.  
 react는 함수에 태그를 리턴하여 컴포넌트를 구성하는 방식이 권장된다. 한가지 파일에 여러개의 컴포넌트를 구성할 수 있다.
 :::
-
-### 1_props
 
 컴포넌트 태그에 속성값 내려받기(함수 또한 전달할 수 있다.)
 
@@ -132,7 +130,7 @@ export const MyHeader = props => {
 :::
 ::::
 
-### 2\_ useState
+## 3. useState
 
 상태관리 함수이다. vue3에서 ref, reactive와 동일한 동작을 한다.
 
@@ -240,27 +238,6 @@ export const Healthdetail = () => {
 }
 ```
 
-## 4. 전역 상태관리
+## 5. [react-query](/docs/REACT/react-query.md)
 
-## 5. react 쿼리
-
-## 6. recoil
-
-> 참조: [블로그](https://velog.io/@ordidxzero/cra-project-structure)
-
-:::: code-group
-::: code-group-item Vue
-
-```vue
-
-```
-
-:::
-::: code-group-item React
-
-```js
-
-```
-
-:::
-::::
+## 6. [recoil](/docs/REACT/react-recoil.md)

@@ -24,13 +24,13 @@ useQuery 훅은 promise로 반환된 객체를 내부 옵션을 통해 컨트롤
 ```js
 import { useQuery } from "react-query"
 // 주로 사용되는 3가지 return 값 외에도 더 많은 return 값들이 있다.
-const { data, isLoading, error } = useQuery(QueryKey, Query Functions, Query Options)
+const { data, isLoading, error } = useQuery(QueryKey, QueryFn, QueryOptions)
 ```
 
 ### QueryKey
 
-- queryKey 기반으로 데이터 개싱을 관리합니다.
-- 문자열 또는 배열로 지정할 수 있다.
+- queryKey 기반으로 데이터 캐싱을 관리합니다.
+- 문자열 또는 배열로 지정할 수 있습니다.
 
 ```js
 // 문자열
@@ -80,7 +80,7 @@ default: 3
 ### - staleTime(number | Infinity)
 
 fresh 상태로 유지되는 시간이다. 해당 시간이 지나면 stale 상태가 됩니다.  
-fresh 상태는 서버로부터 최신의 데이터를 받아온 상태를 뜻하고, stale은 서버와 캐시데이터의 값이 다를 수 있는 refetching 필요한 상태를 뜻합니다.  
+**fresh 상태는 서버로부터 최신의 데이터를 받아온 상태**를 뜻하고, **stale은 서버와 캐시데이터의 값이 다를 수 있는 refetching 필요한 상태**를 뜻합니다.  
 fresh 상태에서는 쿼리가 다시 mount 되어도 fetch가 실행되지 않습니다.
 default: 0
 
@@ -113,42 +113,27 @@ onError 는 쿼리 실패 시 실행되는 함수입니다.
 매개변수로 에러 값을 받을 수 있습니다.
 
 ```tsx
-import axios from "axios"
 import { useQuery } from "react-query"
+import { fetchAPi, mainForm } from "../../service/utils"
 import { useNavigate } from "react-router-dom"
 
-export function guid() {
-  function _p8(s: boolean) {
-    const p = (Math.random().toString(16) + "000000000").substr(2, 8)
-    return s ? "-" + p.substr(0, 4) + "-" + p.substr(4, 4) : p
-  }
-  return _p8(false) + _p8(true) + _p8(true) + _p8(false)
-}
+import { useParams } from "react-router-dom"
 
-const httpData = {
-  Header: {
-    CmdType: 10020,
-    RequestID: guid(),
-  },
-  Body: { Length: 5, Offset: 0 },
-}
-
-const fetchAPi = () => {
-  return axios.post("https://dev-wcrs.familycare.ai:1023/service", httpData, { withCredentials: true })
-}
-
-export const RQExample = () => {
+export const RQMain = () => {
   const navigate = useNavigate()
-  const GoPath = (idx: number) => navigate(`/healthdetail/${idx}`)
-  const { data, isLoading, error } = useQuery("example", fetchAPi, {
+  const GoPath = (idx: number) => navigate(`/reactquery/${idx}`)
+  // useQuery 2번째 인자는 queryFn: QueryFunction<AxiosResponse<any, any> 프로미스 콜백
+  const { data, isLoading } = useQuery("RQMain", () => fetchAPi(mainForm(4, 0)), {
     staleTime: 5000,
   })
+
   if (isLoading) {
     return <h1>Loading</h1>
   }
+  console.log(data)
   return (
     <>
-      <h2>Example</h2>
+      <h2>react-query</h2>
       {data?.data.Body.map(({ Title }: any, idx: number) => (
         <div key={idx} onClick={() => GoPath(idx)}>
           {Title}
@@ -157,9 +142,26 @@ export const RQExample = () => {
     </>
   )
 }
+
+export const RQSub = () => {
+  const { id } = useParams()
+  const { data, isLoading } = useQuery(["RQSub", id], () => fetchAPi(mainForm(1, Number(id))), {
+    staleTime: 5000,
+  })
+  if (isLoading) {
+    return <h1>Loading</h1>
+  }
+  const contents = data?.data.Body[0]
+  console.log(contents)
+  return (
+    <>
+      <h1>{contents.Title}</h1>
+      <div>{contents.Contents}</div>
+    </>
+  )
+}
 ```
 
-
-## 장점
+## 평가
 
 직접 만들어서 사용했던 기타 기능들을 옵션으로 지원하여, 캐시 처리를 기존보다 간단하게 사용할 수 있었습니다. 따라서, 프로젝트 구조가 기존보다 단순화 시킬 수 있을것으로 생각하고, 서버에 중복 데이터 호출을 줄이므로써 최적화 측면에서도 큰 장점이 있을 것으로 판단됩니다.
