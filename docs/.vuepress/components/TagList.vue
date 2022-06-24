@@ -75,6 +75,9 @@ export default defineComponent({
 </script>
 
 <style scoped>
+.wrapper-taglist {
+  margin-bottom: 100px;
+}
 .category {
   color: #ffffff;
   border-radius: 7px;
