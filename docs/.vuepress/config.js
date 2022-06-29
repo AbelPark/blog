@@ -81,7 +81,13 @@ module.exports = {
           children: [
             "/VUE/",
             {
+              text: "vuex",
+              collapsible: true,
+              children: ["/VUE/vuex/insight-branch-api.md", "/VUE/vuex/insight-callback.md"],
+            },
+            {
               text: "vuepress",
+              collapsible: true,
               children: ["/VUE/vuepress/vuepress-init.md"],
             },
           ],

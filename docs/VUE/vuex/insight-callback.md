@@ -97,7 +97,6 @@ callAppApi({ state, commit, dispatch }, payload: ConnectAppApi) {
 
 // page.vue
 onMounted(() => {
-  // 하나 원큐 체크
   if (조건) {
     dispatch("page/callAppApi", { attemp: 0, api: "api명", callback: callback })
   }
