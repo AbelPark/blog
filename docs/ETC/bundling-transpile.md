@@ -11,13 +11,14 @@ routeMeta:
 
 번들링과 트렌스파일은 독립적인 주제이기는 하나 대부분 **빌드 툴 체인(Build Tool Chain)**<sup id="a1">[[1]](#footnote01)</sup>이라는 큰 주제에 같이 묶여서 사용됨.
 
-> 💡**TIP**  
-> **Complie vs Transpile**  
-> Complie이란 작성된 코드를 기계가 이해 할 수 있는 바이너리 코드로 바꾸는 것  
-> Transpile이란 언어 대 언어로 변형하는 작업
->
-> - Complie: 언어 => 기계
-> - Transpile: 언어 => 언어
+::: tip
+**Complie vs Transpile**  
+Complie이란 작성된 코드를 기계가 이해 할 수 있는 바이너리 코드로 바꾸는 것  
+Transpile이란 언어 대 언어로 변형하는 작업
+
+- Complie: 언어 => 기계
+- Transpile: 언어 => 언어
+  :::
 
 ## 번들링(Bundling)
 

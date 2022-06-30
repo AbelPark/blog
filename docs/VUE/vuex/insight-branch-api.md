@@ -86,7 +86,7 @@ export const app: Module<AppState, RootState> = {
 // 모듈마다 같은 action 함수에 서로 다른 로직을 실행한다.
 
 // common.ts
-export const common: Module<commonState, RootState> = {
+export const common: Module<CommonState, RootState> = {
   namespaced: true,
   actions: {
     openBrowser({ rootState }) {
@@ -96,7 +96,7 @@ export const common: Module<commonState, RootState> = {
 }
 
 // channe1.ts
-export const channe1: Module<HanabankState, RootState> = {
+export const channe1: Module<Channe1State, RootState> = {
   namespaced: true,
   actions: {
     openBrowser({ rootState }) {
@@ -106,7 +106,7 @@ export const channe1: Module<HanabankState, RootState> = {
 }
 
 // channe2.ts
-export const channe1: Module<HanabankState, RootState> = {
+export const channe1: Module<Channe2State, RootState> = {
   namespaced: true,
   actions: {
     openBrowser({ rootState }) {

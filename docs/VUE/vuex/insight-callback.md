@@ -58,7 +58,7 @@ callAppApi({ state, commit, dispatch }, payload: ConnectAppApi) {
 // isReady를 true로 리턴받으면 앱 호출 메소드를 설정할 수 있을것이라 생각함
 onMounted(async () => {
   if (조건) {
-    const isReady = await dispatch("app2/callAppApi", { attemp: 0, api: "API명" })
+    const isReady = await dispatch("store/callAppApi", { attemp: 0, api: "API명" })
     // isReady === undefined
     if (isReady) {
       dispatch("api/setBasic")
